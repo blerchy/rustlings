@@ -210,6 +210,20 @@ So the end goal is to:
    - since we're not creating a new vec in `main` anymore, we need to create
      a new vec in `fill_vec`, similarly to the way we did in `main`"""
 
+# LIFETIMES
+
+[[exercises]]
+name = "lifetimes1"
+path = "exercises/lifetimes/lifetimes1.rs"
+mode = "compile"
+hint = """
+Since Rust allows us to pass around references to variables that are owned
+elsewhere, how can we be sure that the info we are referencing hasn't fallen
+out of scope, been dropped, or otherwise forgotten? The borrow checker ensures
+all our references are valid. Have a look at the Generic Types, Traits, and
+Lifetimes -> Validating References with Lifetimes section of the book for
+more detail. https://doc.rust-lang.org/book/ch10-03-lifetime-syntax.html"""
+
 # PRIMITIVE TYPES
 
 [[exercises]]
